@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <title>Styling Web Forms</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <form class="form" action="" method="post">
+        <h2 class="form__headline">Create an Account</h2>
+        <div class="form__two-in-one-row">
+          <div class="form__unit">
+            <label class="form__label" for="firstName">First Name</label>
+            <input
+              class="form__input form__input--sm"
+              type="text"
+              id="firstName"
+              name="firstName"
+              required
+            />
+          </div>
+          <div class="form__unit">
+            <label class="form__label" for="lastName">Last Name</label>
+            <input
+              class="form__input form__input--sm"
+              type="text"
+              id="lastName"
+              name="lastName"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form__one-in-one-row form__unit">
+          <label class="form__label" for="email">E-mail</label>
+          <input
+            class="form__input form__input--xl"
+            type="email"
+            id="email"
+            name="email"
+            required
+          />
+          <span>We'll never share your email with anyone else.</span>
+        </div>
+
+        <div class="radio__field">
+          <input class="radio__button" type="radio" id="male" name="gender" />
+          <label class="radio__label" for="male">Male</label>
+          <input class="radio__button" type="radio" id="female" name="gender" />
+          <label class="radio__label" for="female">Female</label>
+        </div>
+
+        <div class="form__two-in-one-row">
+          <div class="form__unit">
+            <label class="form__label" for="country">Country</label>
+            <select
+              class="form__input form__input--sm form__select"
+              name="country"
+              id="country"
+              required
+            >
+              <option value="">Select</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="poland">Poland</option>
+              <option value="germany">Germany</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+
+          <div class="form__unit">
+            <label class="form__label" for="city">City</label>
+            <input class="form__input form__input--sm" type="text" id="city" name="city" />
+          </div>
+        </div>
+
+        <button class="form__button form__button--xl" type="submit">
+          Sign Up
+        </button>
+
+        <div class="container">
+          <div class="condition">
+            <span>By clicking the 'Sign Up' button, you confirm that you accept our
+              <a href="#">Terms of Use</a> and
+              <a href="#">Privacy Policy</a>.
+            </span>
+          </div>
+
+          <div class="divider"></div>
+
+          <div class="log-in">
+            <p>Have an account?</p>
+            <a href="#">Log In</a>
+          </div>
+        </div>
+      </form>
+
+      <form class="form" action="" method="post">
+        <h2 class="form__headline">Profile</h2>
+
+        <div class="form__photo-section">
+          <img
+            src="assets/images/profile.png"
+            alt="your photo"
+            class="profile-image"
+          />
+          <div>
+            <div class="photo-section__input">
+              <input class="form__input-with-image" type="text" name="photo" />
+              <button class="form__button-reset" type="reset">
+                <img src="assets/images/trash.svg" alt="" />
+              </button>
+            </div>
+            <span>Up to 1 MB (300x300 px)</span>
+          </div>
+        </div>
+
+        <div class="form__two-in-one-row">
+          <div class="form__unit">
+            <label class="form__label" for="fullName">Full Name</label>
+            <input
+              class="form__input form__input--sm"
+              type="text"
+              id="fullName"
+              name="fullName"
+              required
+            />
+          </div>
+          <div class="form__unit">
+            <label class="form__label" for="profileEmail">E-mail</label>
+            <input
+              class="form__input form__input--sm"
+              type="email"
+              id="profileEmail"
+              name="profileEmail"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="form__two-in-one-row">
+          <div class="form__unit">
+            <label class="form__label" for="profileCountry">Country</label>
+            <select
+              class="form__input form__input--sm form__select"
+              name="profileCountry"
+              id="profileCountry"
+              required
+            >
+              <option value="">Select</option>
+              <option value="ukraine">Ukraine</option>
+              <option value="poland">Poland</option>
+              <option value="germany">Germany</option>
+              <option value="usa">USA</option>
+            </select>
+          </div>
+          <div class="form__unit">
+            <label class="form__label" for="profileCity">City</label>
+            <input class="form__input form__input--sm" type="text" id="profileCity" name="profileCity" />
+          </div>
+        </div>
+
+        <div class="form__two-in-one-row">
+          <div class="form__unit">
+            <label class="form__label" for="zipCode">Zip Code</label>
+            <input
+              class="form__input form__input--sm"
+              type="number"
+              id="zipCode"
+              name="zipCode"
+            />
+          </div>
+          <div class="form__unit">
+            <label class="form__label" for="phoneNumber">Phone Number</label>
+            <input
+              class="form__input form__input--sm"
+              type="number"
+              id="phoneNumber"
+              name="phoneNumber"
+            />
+          </div>
+        </div>
+
+        <button class="form__button form__button--sm" type="submit">
+          Update
+        </button>
+      </form>
+    </div>
+  </body>
+</html>
